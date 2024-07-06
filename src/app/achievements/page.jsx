@@ -50,7 +50,8 @@ const AchievementsPage = () => {
     ]
     return (
         <main>
-            <section className="w-full py-14">
+            <section data-aos="fade-up"
+                data-aos-anchor-placement="top-center" className="w-full py-14">
                 <div className=" px-4 md:px-6">
                     <div className="text-center flex flex-col gap-2 items-center justify-center h-[40vh]">
                         <div className="space-y-2">

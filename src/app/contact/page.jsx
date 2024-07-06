@@ -1,6 +1,9 @@
+
 const ContactPage = () => {
+   
     return (
-        <section className="opacity: 1; transform: none;">
+        <section data-aos="fade-up"
+        data-aos-duration="3000" className="opacity: 1; transform: none;">
             <div className="w-full py-12 md:py-24 lg:py-32">
                 <div className="container px-4 md:px-6">
                     <div className="mx-auto max-w-3xl space-y-8">

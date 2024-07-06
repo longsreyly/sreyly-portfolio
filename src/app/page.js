@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main>
       {/* header title */}
-      <div className="text-center">
+      <div data-aos="zoom-in" className="text-center">
         <div className="opacity: 1; transform: none;">
           <section className="text-center flex flex-col gap-6 items-center justify-center h-[calc(100vh-64px)]">
             <h1 className="text-6xl font-medium max-w-4xl bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-500 bg-clip-text tracking-tighter text-transparent p-2 px-4 lg:px-0">
@@ -48,13 +48,15 @@ export default function Home() {
       </div>
 
       {/* My Skills  */}
-      <section id="skill" className="container m-auto w-full py-12 md:py-24 lg:py-32 flex flex-col gap-6">
-        <h1 className="text-3xl font-semibold">My Skills</h1>
+      <section data-aos="fade-up"
+        data-aos-duration="3000" id="skill" className="container m-auto w-full py-12 md:py-24 lg:py-32 flex flex-col gap-6">
+        <h1 className=" text-3xl font-semibold">My Skills</h1>
         <CardComponent />
       </section>
 
       {/* Content */}
-      <section className="w-full py-12 md:py-24 lg:py-20">
+      <section data-aos="fade-up"
+        data-aos-duration="3000"className="w-full py-12 md:py-24 lg:py-20">
         <div className=" grid  gap-6 px-4 md:px-6">
           <div className="space-y-4 text-center">
             <h1 className="text-4xl font-bold tracking-tighter md:text-5xl">Hire me for your next project</h1>

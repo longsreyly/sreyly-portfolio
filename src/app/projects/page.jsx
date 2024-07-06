@@ -24,7 +24,8 @@ const ProjectPage = () => {
     ]
     return (
         <main>
-            <section className="w-full py-14 ">
+            <section data-aos="fade-up"
+                data-aos-anchor-placement="top-center" className="w-full py-14 ">
                 <div className=" px-4 md:px-6 ">
                     <div className="flex flex-col items-center space-y-4 text-center mt-20">
                         <div className="space-y-2 ">
@@ -48,7 +49,7 @@ const ProjectPage = () => {
                         </div>
                     </div>
                     {/* card */}
-                    <div className='grid gap-6 md:grid-cols-2 lg:grid-cols-3'>
+                    <div data-aos="zoom-in-right" className='grid gap-6 md:grid-cols-2 lg:grid-cols-3'>
                         {
                             project.map((data) => (
                                 <div class="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
