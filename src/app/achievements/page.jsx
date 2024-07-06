@@ -3,50 +3,20 @@ import Link from "next/link";
 const AchievementsPage = () => {
     const information = [
         {
-            image : "/rupp.png",
-            title : "Introduction to Networks ",
-            name : "Issued by Royal University of Phnom Penh",
-            completed : "Completed on 8 Sep 2022",
-            cridentail : "https://drive.google.com/file/d/1D7uWSOfk_drt5WiZYJ3r8IeMWhPp3IEj/view?usp=sharing"       
+            image : "/cstad.png",
+            title : "Web Design ",
+            name : "Issued by CSTAD",
+            completed : "Completed 30,November 2023",
+            cridentail : ""       
         },
         {
-            image : "/rupp.png",
-            title : "Switching, Routing, and Wireless Essentials ",
-            name : "Issued by Royal University of Phnom Penh",
-            completed : "Completed on 28 Jul 2023",
-            cridentail : "https://drive.google.com/file/d/1NJaxH-5B8LFvlbOW33ifoHAfC7sa6ntt/view?usp=sharing"          
+            image : "/hrd.png",
+            title : "Basic Course of IT  ",
+            name : "Issued by Korean Software HRD Center",
+            completed : "Completed on 10,July 2024",
+            cridentail : ""          
         },
-        {
-            image : "/coursera.png",
-            title : "Programming Fundamentals in Kotlin",
-            name : "Issued by Coursera",
-            completed : "Completed on July 3, 2024",
-            cridentail : "https://coursera.org/share/7cd2ba448e87e8f767c64efc3c00b068"           
-        },
-        {
-            image : "/coursera.png",
-            title : "Introduction to iOS Mobile Application Development",
-            name : "Issued by Coursera",
-            completed : "Completed on May 27, 2024",
-            cridentail : "https://coursera.org/share/2bd0592436aa00879d760a8b49271011"           
-
-        },
-        {
-            image : "/coursera.png",
-            title : "Version Control",
-            name : "Issued by Coursera",
-            completed : "Completed on June 26, 2024",
-            cridentail : "https://coursera.org/share/1f872ccee0df931d732bb1809cfbee88"           
-
-        },
-        {
-            image : "/coursera.png",
-            title : "Programming Fundamentals in Swift",
-            name : "Issued by Coursera",
-            completed : "Completed on July 5, 2024",
-            cridentail : "https://coursera.org/share/63a8dd9f75157792cf000acbe60eef6d"           
-
-        }
+        
     ]
     return (
         <main>
@@ -64,8 +34,9 @@ const AchievementsPage = () => {
                 </div>
             </section>
             {/* Card Achievements */}
-            <section className="container m-auto w-full py-10 md:py-24 lg:py-30">
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <section data-aos="fade-up"
+        data-aos-duration="3000" className="container m-auto w-full py-10 md:py-24 lg:py-30">
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
                   {
                     information.map((data)=>(
                         <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">

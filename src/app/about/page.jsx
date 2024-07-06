@@ -2,8 +2,7 @@
 import Link from "next/link";
 import { TypeAnimation } from 'react-type-animation';
 import { React, useEffect } from 'react'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 const AboutMePage = () => {
     const enducation = [
@@ -29,12 +28,7 @@ const AboutMePage = () => {
         }
 
     ]
-    useEffect(() => {
-        AOS.init({
-            duration: 800,
-            once: false,
-        })
-    }, [])
+  
     return (
 
         <main className="flex flex-col min-h-[100dvh]">

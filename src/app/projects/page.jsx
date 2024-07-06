@@ -49,14 +49,14 @@ const ProjectPage = () => {
                         </div>
                     </div>
                     {/* card */}
-                    <div data-aos="zoom-in-right" className='grid gap-6 md:grid-cols-2 lg:grid-cols-3'>
+                    <div data-aos="zoom-in-right" className='grid gap-2 md:grid-cols-2 lg:grid-cols-3 w-70'>
                         {
                             project.map((data) => (
-                                <div class="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
+                                <div class="w-60 relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
                                     <Link className="absolute inset-0 z-10" href={data.link}>
                                         <span className="sr-only">View Project</span>
                                     </Link>
-                                    <img  className="object-cover w-full h-60 md:h-72 lg:h-96 group-hover:scale-105 transition-all duration-300 color: transparent; aspect-ratio: 600 / 400; object-fit: cover;" alt="No Picture" loading="lazy" decoding="async" data-nimg="1"  src={data.image}/>
+                                    <img  className="object-cover w-60 h-50 md:h-52 lg:h-56 group-hover:scale-105 transition-all duration-300 color: transparent; aspect-ratio: 600 / 400; object-fit: cover;" alt="No Picture" loading="lazy" decoding="async" data-nimg="1"  src={data.image}/>
                                     <div className="bg-white p-4 dark:bg-gray-950">
                                         <h3 className="font-semibold text-lg md:text-xl">{data.title}</h3>
                                         <p className="text-sm text-gray-500 dark:text-gray-400">{data.paragraph}</p>
